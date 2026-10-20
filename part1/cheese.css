@@ -1,0 +1,90 @@
+/*
+ Name: Lisa Tran
+ Repository: https://github.com/mantuetr/cse134_hw3
+*/
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffb3c6;
+    line-height: 1.6;
+
+    background-color: beige;
+
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h1{
+    font-size: 3.5rem;
+    text-align: center;
+    color: #fb6f92;
+}
+
+h2{
+    font-size: 1.6rem;
+    color: #ff8fab;
+}
+
+.latin{
+    font-style: italic;
+}
+
+#warning{
+    color: #f94449;
+    background-color: #f1ee8e;
+    padding: 5px;
+}
+
+blockquote{
+    border-left: 5px solid #ff3e9d;
+    margin: 20px;
+    padding: 15px;
+    background-color: #ffe5ec;
+
+    color: black;
+}
+
+a{
+    color: #b582ff;
+}
+
+a:hover{
+    color: purple;
+    text-decoration: dotted;
+}
+
+a:focus,
+input:focus,
+button:focus{
+    outline: 2.5px solid #CAADFF;
+    outline-offset: 2.5px;
+}
+
+input,
+button{
+    padding: 8px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+button{
+    background-color: rgb(250, 212, 250);
+    cursor: pointer;
+}
+
+button :hover{
+    background-color: black;
+}
+
+h1{
+    letter-spacing: 5px;
+}
+
+h1{
+    letter-spacing: 1px;
+}
+
+/*
+ The later value wins because CSS applies the last declaration when the cascade factors are equal
+*/
