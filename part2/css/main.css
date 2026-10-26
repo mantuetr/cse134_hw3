@@ -1,0 +1,334 @@
+:root{
+    --sky: #bcebfa;
+    --pink: #facbe1;
+    --pink-strong: #f46ba8;
+    --lavender: #dbd1fd;
+    --green: #f1f3b8;
+    --yellow: #ffee8c;
+    --orange: #fdd180;
+    --red: #ffc4c4;
+    --blue: #5bbdf3;
+    --purple-light: #EFC3F5;
+    --cream: #fff9ee;
+    --border: #7466a5;
+    --ink: #6666c8;
+    --font-main: "Trebuchet MS", Arial, sans-serif;
+}
+body{
+    background-color: var(--sky);
+    background: linear-gradient(to bottom, var(--purple-light), var(--sky))
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.5rem 3rem;
+}
+
+.site-header h1 {
+    font-size: 3.5rem;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+    line-height: 1.2;
+
+    color: #f45b9a;
+    text-shadow: 3px 3px 0 #ffffff;
+
+    margin: 0;
+}
+
+.navbar{
+    position: relative;
+    z-index: 100;
+
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+
+    width: fit-content;
+    max-width: 95%;
+    margin: 1.5rem 2rem 1.5rem auto;
+    padding: 0.5em 1em;
+
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid white;
+    border-radius: 50px;
+
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+
+.nav-links > a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    padding: 0.65em 1em;
+    border-radius: 50px;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.nav-links a:hover {
+    background: var(--pink);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(112, 81, 165, 0.12);
+}
+
+.navbar a:focus-visible {
+    outline: 3px solid var(--purple-light);
+    outline-offset: 3px;
+}
+
+.introduction{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    align-items: center;
+    gap: 3rem;
+
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 3rem;
+
+    background-color: var(--cream);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 8px 8px 0 var(--pink);
+}
+
+.intro-label{
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: var(--border);
+}
+
+.intro-text h2{
+    font-size: 2.5rem;
+    color: var(--ink);
+    margin: 0.5rem 0 1rem;
+}
+
+.intro-text p{
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.intro-image{
+    text-align: center;
+}
+
+.intro-image img {
+    
+    border: 6px solid var(--pink);
+    border-radius: 8px;
+}
+
+.intro-image p {
+    text-align: center;
+    font-weight: bold;
+    color: var(--border);
+}
+
+.intro-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7em 1.5em;
+
+    background-color: var(--orange);
+    color: var(--ink);
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    box-shadow: 4px 4px 0 var(--border);
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.intro-button:hover {
+    background-color: var(--pink);
+}
+
+.intro-button:focus-visible {
+    outline: 3px solid var(--ink);
+    outline-offset: 4px;
+}
+
+.passion{
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 1.5rem;
+}
+
+.passions > h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--ink);
+    margin-bottom: 2rem;
+}
+
+.passion-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.passion-card {
+    background: var(--yellow);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 5px 5px 0 var(--pink);
+}
+
+.passion-card:nth-child(2) {
+    background: var(--red);
+}
+
+.passion-card:nth-child(3) {
+    background: var(--sky);
+}
+
+.passion-card:nth-child(4) {
+    background: var(--green);
+}
+
+.passion-card:hover {
+    transform: translateY(-5px);
+}
+
+.passion-card a {
+    display: block;
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.passion-card a:focus-visible {
+    outline: 3px solid var(--ink);
+    outline-offset: 4px;
+}
+
+.passion-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.passion-card h3 {
+    font-size: 1.3rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.passion-card span {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.reminder {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 3rem 2rem;
+
+    background: var(--purple-light);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 6px 6px 0 var(--pink);
+
+    text-align: center;
+}
+
+.reminder h2 {
+    font-size: 2rem;
+    color: var(--ink);
+    margin-bottom: 1rem;
+}
+
+.reminder p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--ink);
+}
+
+.site-footer {
+    max-width: 1100px;
+    margin: 4rem auto 2rem;
+    padding: 2rem;
+
+    background: var(--cream);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 8px 8px 0 var(--pink);
+}
+
+.site-footer p {
+    font-size: 1rem;
+    color: var(--ink);
+}
+
+/* Descendant combinator: targets links inside the footer */
+.site-footer a {
+    display: inline-block;
+    padding: 0.7em 1.5em;
+
+    background: var(--yellow);
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    box-shadow: 3px 3px 0 var(--border);
+
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-footer a:hover {
+    background: var(--pink);
+    transform: translateY(-2px);
+}
+
+.site-footer a:focus-visible {
+    outline: 3px solid var(--ink);
+    outline-offset: 4px;
+}
+
+
+@media (max-width: 768px) {
+    .introduction {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+
+    .intro-text h2 {
+        font-size: 2rem;
+    }
+
+    .intro-image img {
+        margin: 0 auto;
+    }
+}  
